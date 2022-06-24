@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "微軟正黑體";
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 50px;
+    background-color:rgb(222, 184, 135);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .logo{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: azure;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header .navbar{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    
+}
+
+header .navbar li{
+    flex-grow: 1;
+    
+}
+
+header .navbar li a{
+    font-size: 18px;
+    color:azure;
+    text-decoration: none;
+    transition: all .3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header .navbar li a:hover{
+    font-size: 22px;
+}
+
+/* banner */
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url('./img/banner.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.banner h1{
+    color: azure;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.banner p{
+    color: azure;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.banner a{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(222, 184, 135);
+    color: azure;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 50px;
+    box-shadow: 0 0 20px 8px rgba(222, 184, 135,.2);
+}
+
+/* introduction */
+.introduction{
+    margin-bottom: 50px;
+}
+
+.introduction h2{
+    text-align: center;
+    font-size: 28px;
+    color: rgb(87, 44, 14);
+    text-decoration: underline;
+}
+
+.service{
+    display: flex;
+    margin: 50px;
+}
+
+.service .content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.service .content_special{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service .content h3{
+    font-size: 32px;
+    padding-bottom: 20px;
+
+}
+
+.service .content p{
+    font-size: 18px;
+    line-height: 2;
+}
+
+.service .content .btn{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    font-weight: 700;
+    background-color:burlywood;
+    color: azure;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.service .content_special h3{
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+.service .content_special p{
+    font-size: 18px;
+    line-height: 2;
+}
+
+.service .content_special .btn{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    font-weight: 700;
+    background-color: burlywood;
+    color: azure;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.service .pic{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+    
+.service .pic img{
+    width: 70%;
+    height: 300px;
+}
+
+/* about */
+.about{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(87, 44, 14);
+}
+
+h2{
+    text-align: center;
+    font-size: 28px;
+    color: rgb(87, 44, 14);
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+.about .pic{
+    width: 50%;
+}
+
+.about .pic img{
+    width: 100%;
+    height: 350px;
+    object-fit:cover;
+}
+
+.about .content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+.about .content h3{
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+.about .content p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.about .content .btn{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    transform:translate(230%) ;
+    color: rgb(87, 44, 14);
+    border: 3px solid rgb(87, 44, 14);
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: all .5s;
+}
+
+.about .content .btn:hover{
+    background-color: rgb(87, 44, 14);
+    color: azure;
+    }
+
+/* shop */
+
+.shop{
+    margin-bottom: 50px;
+}
+
+.shop h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+.card_group{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card_group .card{
+    width: 27%;
+    
+}
+
+.card_group .card .pic{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card_group .card .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s;
+}
+
+.card_group .card .pic img:hover{
+    transform: scale(1.2);
+}
+
+.shop .card h3{
+    font-size: 24px;
+    color: rgb(87, 44, 14);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.shop a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: rgb(87, 44, 14);
+    border: 3px solid rgb(87, 44, 14);
+    text-decoration: none;
+    transform: translate(580px);
+    transition: all .5s;
+}
+
+.shop a:hover{
+    background-color: rgb(87, 44, 14);
+    color: azure;
+    }
+
+/* footer */
+footer{
+    margin-top: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color:burlywood;
+    display: flex;
+    justify-content: center;
+}
+
+footer .content{
+    color: azure;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
